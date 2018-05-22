@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backregistoresize"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/takephotobutton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/photouserres"
+            app:civ_border_color="@color/azul" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="95dp"
+            android:src="@drawable/more" />
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/fragment_registo_editText_email"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#d9d9d9"
+        android:drawableLeft="@drawable/rsz_username_registo"
+        android:drawablePadding="20dp"
+        android:focusableInTouchMode="true"
+        android:gravity="start"
+        android:hint="username"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:textColor="#7f7f7f"
+        android:textColorHint="#7f7f7f" />
+
+    <EditText
+        android:id="@+id/fragment_registo_editText_password"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#d9d9d9"
+        android:drawableLeft="@drawable/rsz_pass"
+        android:drawablePadding="20dp"
+        android:focusableInTouchMode="true"
+        android:gravity="start"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:textColor="#7f7f7f"
+        android:textColorHint="#7f7f7f" />
+
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/list_location"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#d9d9d9"
+        android:drawableLeft="@drawable/rsz_location"
+        android:drawablePadding="20dp"
+        android:hint="building location"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:spinnerMode="dialog"
+        android:textAlignment="viewStart"
+        android:textColor="#7f7f7f"
+        android:textStyle="normal"
+        tools:ignore="RtlCompat" />
+
+
+    <Button
+        android:id="@+id/fragment_registo_button_registar"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#00cf81"
+        android:backgroundTint="#00cf81"
+        android:text="create account"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/branco"
+        android:textSize="17sp" />
+
+
+</LinearLayout>

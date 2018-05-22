@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "727243564177",
+    "firebase_url": "https://gresbas-191fb.firebaseio.com",
+    "project_id": "gresbas-191fb",
+    "storage_bucket": "gresbas-191fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727243564177:android:3b3e536744c94bcf",
+        "android_client_info": {
+          "package_name": "inesctec.gresbas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727243564177-qe3gpo48b8btc5hvug0p1ce3ra8grohd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inesctec.gresbas",
+            "certificate_hash": "62b2e88f1defd7fc92546442e5bff7664e0655e5"
+          }
+        },
+        {
+          "client_id": "727243564177-7t6mh5t8mh4qi93vpl2nrvcr4p0a05sj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5mSHM0g7q7S2BSJJK19Vqn8u6TQw0koY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727243564177-7t6mh5t8mh4qi93vpl2nrvcr4p0a05sj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

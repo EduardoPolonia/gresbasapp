@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="435dp"
+    android:layout_gravity="center"
+    android:background="#2f333f"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:theme="@android:style/android:Theme.Dialog">
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/branco"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titlepop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:text="My Points"
+        android:textColor="@color/branco"
+        android:textSize="20sp" />
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/stick_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        app:iconPadding="14dp"
+        app:iconSize="15dp"
+        app:leftText="Total"
+        app:rightText="Week"
+        app:selectedTextSize="14sp"
+        app:sliderBackgroundColor="@color/colorStickyBG"
+        app:switchColor="@color/colorSticky"
+        app:textColor="@color/azul"
+        app:textSize="12sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp" />
+    <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_popup_style"
+            android:textColor="@color/branco"/>-->
+
+</LinearLayout>

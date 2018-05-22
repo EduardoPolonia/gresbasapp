@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="inesctec.gresbas">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="false" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Utils.Gresbas"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".User.SplashScreen.SplashScreen"
+            android:theme="@style/Theme.NoPreviewWindow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Service.Indoor_Location_Service"
+            android:exported="false"
+            android:label="Localização Indoor" />
+        <service
+            android:name=".Service.Weather_Service"
+            android:exported="false"
+            android:label="Tempo" />
+
+        <activity
+            android:name=".Login_Registo.Login_Registo"
+            android:theme="@style/Theme.NoPreviewWindow" />
+        <activity
+            android:name=".User.User_Fragments.User"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.User_Fragments.User_Settings"
+            android:label="Settings" />
+        <activity
+            android:name=".User.User_Fragments.User_Locais"
+            android:label="Os Meus Locais" />
+        <activity
+            android:name=".User.User_Fragments.User_Adicionar_Locais"
+            android:label="Adicionar Local" />
+
+        <receiver android:name=".Utils.my_BroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="location_notification_action_YES_s" />
+                <action android:name="location_notification_action_NO_s" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Utils.LogActivity"
+            android:label="LOG" />
+        <activity
+            android:name=".User.User_Fragments.User_Settings_prog"
+            android:label="Programador"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".User.User_Fragments.Restaurants"
+            android:theme="@style/resturant_theme" />
+        <activity
+            android:name=".User.Tabs_Impact.impact_tab"
+            android:label="@string/title_activity_impact_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.Popup.popup_MyEpScore"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".User.Tabs_Team.team_tab"
+            android:label="@string/title_activity_team_tab"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+
+        <!-- [START firebase_service] -->
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+
+
+    </application>
+</manifest>

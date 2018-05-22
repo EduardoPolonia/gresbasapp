@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:gravity="center|center_vertical"
+            android:text="Last behaviour detected"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginTop="46dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/playbutton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:gravity="center|center_vertical"
+            android:text="Optimized behaviour"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginTop="46dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/playbutton" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:gravity="center|center_vertical"
+            android:text="Most common behaviour"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginTop="46dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/playbutton" />
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigationbeh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#00cf81"
+            app:itemIconTint="@color/branco"
+            app:itemTextColor="@color/branco"
+            app:menu="@menu/bottom_navigation_main" />
+
+
+    </RelativeLayout>
+</LinearLayout>

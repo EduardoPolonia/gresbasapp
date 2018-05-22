@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rsz_1gresbas_welcomescreen"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/fragment_login_imageView_logo"
+            android:layout_width="287dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="105dp"
+            android:src="@drawable/gresbras" />
+
+        <EditText
+            android:id="@+id/fragment_login_editText_email"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/corners_radius_500dp_branco"
+            android:hint="user"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textColorHint="@color/branco"
+            android:textCursorDrawable="@color/branco" />
+
+
+        <EditText
+            android:id="@+id/fragment_login_editText_password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corners_radius_500dp_branco"
+            android:gravity="left|center_vertical"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/branco"
+            android:textColorHint="@color/branco"
+            android:textCursorDrawable="@color/branco" />
+
+        <Button
+            android:id="@+id/fragment_login_button_login"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#00cf81"
+            android:backgroundTint="#00cf81"
+            android:text="login"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/branco"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/ch_rememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:buttonTint="@color/branco"
+            android:text="Remember me"
+            android:textColor="@color/branco" />
+
+
+        <TextView
+            android:id="@+id/fragment_login_textView_registar"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="Create an account"
+            android:textAlignment="center"
+            android:textColor="@color/branco" />
+
+        <ImageView
+            android:id="@+id/fragment_login_imageView_logo_gresbas"
+            android:layout_width="200dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/in_login" />
+
+
+    </LinearLayout>
+</RelativeLayout>

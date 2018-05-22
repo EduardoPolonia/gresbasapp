@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teste.teste6.User.User_Adicionar_Locais">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/locais_fab_add"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_plus_white_48dp"
+        app:backgroundTint="@color/p0097c1_300" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/adicionar_locais_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Local" />
+
+        <EditText
+            android:id="@+id/adicionar_locais_editText_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adicionar_locais_tv1"
+            android:layout_marginTop="8dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/adicionar_locais_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adicionar_locais_editText_nome"
+            android:layout_marginTop="16dp"
+            android:text="Redes Conhecidas" />
+
+        <ImageButton
+            android:id="@+id/adicionar_locais_button_popup"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignTop="@id/adicionar_locais_tv2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@id/adicionar_locais_tv2"
+            android:background="@drawable/ic_information_grey600_48dp" />
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/adicionar_locais_tv2"
+            android:layout_marginTop="8dp">
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
